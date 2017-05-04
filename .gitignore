@@ -226,3 +226,7 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# for my own use
+*.sublime-project
+*.sublime-workspace

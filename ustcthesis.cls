@@ -341,14 +341,14 @@
       签字日期：\ustc@underline[7.4em]{} & 签字日期：\ustc@underline[7.4em]{} \\
     \end{tabular}}
 }
-\newenvironment{abstract}{%
+ \newenvironment{abstract}{%
     \ifustc@opt@bachelor
-        \ctexset{chapter/format += \zihao{-2}}
+    %%    \ctexset{chapter/format += \zihao{-2}}
     \fi
     \chapter[摘要]{摘\zhspace 要}}{}
 \newenvironment{enabstract}{%
     \ifustc@opt@bachelor
-        \ctexset{chapter/format += \zihao{-2}}
+        %%\ctexset{chapter/format += \zihao{-2}}
         \chapter{Abstract}
     \else
         \chapter[Abstract]{ABSTRACT}
@@ -544,7 +544,7 @@
 \renewenvironment{thebibliography}[1]{%
     \if@openright\cleardoublepage\else\clearpage\fi
     \@mainmatterfalse
-    \ifustc@opt@bachelor\ctexset{chapter/format += \zihao{-2}}\fi
+    %%\ifustc@opt@bachelor\ctexset{chapter/format += \zihao{-2}}\fi
     \chapter{\bibname}%
     \parindent\z@
     \bibpreamble
@@ -573,7 +573,7 @@
 }%
 \newenvironment{acknowledgements}{%
     \ifustc@opt@bachelor
-        \ctexset{chapter/format += \zihao{-2}}%
+        %%\ctexset{chapter/format += \zihao{-2}}%
         \chapter*{\ustc@acknowledgementsname}%
     \else
         \chapter[\ustc@pdf@acknowledgementsname]{\ustc@acknowledgementsname}%
